@@ -5,7 +5,9 @@ What are the security challenges in iOS? And what are best security practices?
 
 
  1.Data Leaks - Storing sensitive data such as access token, secrets and API credentials in an unsecured way can lead to interception or stealing of the user data
+ 
  2.Unsecured communication - By making our application communicate with server using a non-secure connection, such as HTTP, will be risky can lead to potential and easy attacks
+ 
  3. Man in the middle attack - By using know techniques of faking Certifying Authority(CA) on the device, the attacker could imitate the target, and decrypt traffic. This could leak sensitive data
 
 Some of the best security practices
