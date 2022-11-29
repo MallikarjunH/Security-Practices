@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Keychain_Service_API" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rHd-b4-yCv">
+                                <rect key="frame" x="35" y="182" width="301" height="40"/>
+                                <color key="backgroundColor" red="0.1105984971" green="0.63880544900000003" blue="0.84232515100000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5fS-L6-hLj"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Save Secret Key"/>
+                                <connections>
+                                    <action selector="saveYourAuthKeyBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Akd-5I-Ujs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IFa-zF-eIz">
+                                <rect key="frame" x="35" y="239" width="301" height="40"/>
+                                <color key="backgroundColor" red="0.1105984971" green="0.63880544900000003" blue="0.84232515100000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Fyu-HU-u50"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=" Get Secret Key"/>
+                                <connections>
+                                    <action selector="getYourAuthKeyBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Kz-jQ-EhI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oY2-UM-gAl">
+                                <rect key="frame" x="35" y="298" width="301" height="40"/>
+                                <color key="backgroundColor" red="0.1105984971" green="0.63880544900000003" blue="0.84232515100000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="l67-gS-tS5"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Update Secret Key"/>
+                                <connections>
+                                    <action selector="updateYourAuthKeyBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QbO-oL-WgE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tGl-tR-X9T">
+                                <rect key="frame" x="35" y="362" width="301" height="40"/>
+                                <color key="backgroundColor" red="0.1105984971" green="0.63880544900000003" blue="0.84232515100000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="99J-FW-9m1"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Delete Secret Key"/>
+                                <connections>
+                                    <action selector="deletYourAuthKeyBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GJP-HF-b9T"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2L5-2Q-Wsn">
+                                <rect key="frame" x="43" y="422" width="293" height="97"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="97" id="gck-5U-xRE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cAd-VO-6Ik">
+                                <rect key="frame" x="43" y="72" width="293" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="vjv-HV-xVq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="gdc-wC-9ZX"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mNF-tP-eny">
+                                <rect key="frame" x="43" y="128" width="293" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="qNF-ut-v69"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="0UO-Ym-dgX"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cAd-VO-6Ik" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="3YO-3F-D6c"/>
+                            <constraint firstItem="tGl-tR-X9T" firstAttribute="top" secondItem="oY2-UM-gAl" secondAttribute="bottom" constant="24" id="3tA-BC-aAB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2L5-2Q-Wsn" secondAttribute="trailing" constant="54" id="5gL-bw-1Hh"/>
+                            <constraint firstItem="rHd-b4-yCv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="6oe-ii-mne"/>
+                            <constraint firstItem="2L5-2Q-Wsn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="AdC-xK-Plh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IFa-zF-eIz" secondAttribute="trailing" constant="54" id="DJB-V8-7xo"/>
+                            <constraint firstItem="IFa-zF-eIz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="FF8-a4-hKB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mNF-tP-eny" secondAttribute="trailing" constant="54" id="IJb-i1-fb1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oY2-UM-gAl" secondAttribute="trailing" constant="54" id="LGg-bl-15l"/>
+                            <constraint firstItem="oY2-UM-gAl" firstAttribute="top" secondItem="IFa-zF-eIz" secondAttribute="bottom" constant="19" id="Oxl-vx-zzS"/>
+                            <constraint firstItem="mNF-tP-eny" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="Qu3-OH-HsR"/>
+                            <constraint firstItem="cAd-VO-6Ik" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="43" id="RbI-cI-euF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cAd-VO-6Ik" secondAttribute="trailing" constant="54" id="ZAN-xl-jQN"/>
+                            <constraint firstItem="oY2-UM-gAl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="hHj-ix-pKs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tGl-tR-X9T" secondAttribute="trailing" constant="54" id="ivK-9D-dn1"/>
+                            <constraint firstItem="mNF-tP-eny" firstAttribute="top" secondItem="cAd-VO-6Ik" secondAttribute="bottom" constant="22" id="owg-li-cqe"/>
+                            <constraint firstItem="rHd-b4-yCv" firstAttribute="top" secondItem="mNF-tP-eny" secondAttribute="bottom" constant="20" id="p4j-E7-6lt"/>
+                            <constraint firstItem="IFa-zF-eIz" firstAttribute="top" secondItem="rHd-b4-yCv" secondAttribute="bottom" constant="17" id="ubf-Xj-cpv"/>
+                            <constraint firstItem="2L5-2Q-Wsn" firstAttribute="top" secondItem="tGl-tR-X9T" secondAttribute="bottom" constant="20" id="vKZ-LO-cju"/>
+                            <constraint firstItem="tGl-tR-X9T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="wAh-Rr-wdY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rHd-b4-yCv" secondAttribute="trailing" constant="54" id="yBC-JF-suO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="mNF-tP-eny" id="gAt-XK-u9q"/>
+                        <outlet property="sampleLabel" destination="2L5-2Q-Wsn" id="OEY-u9-wZl"/>
+                        <outlet property="userNameTextField" destination="cAd-VO-6Ik" id="cDe-zd-Q0l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21.538461538461537" y="3.5545023696682461"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
